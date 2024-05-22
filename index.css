@@ -1,0 +1,38 @@
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 98vh;
+    background-color: #c9ece8;
+}
+
+label {
+    font-size: larger;
+}
+
+input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 25px;
+    width: 97%;
+    margin: 5px 0px;
+    border: solid 1px grey;
+    border-radius: 4px;
+    outline : none;
+}
+
+input[type=button] {
+    width: 100%;
+    background-color: #12bea7;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.results {
+    font-size: xx-large;
+}

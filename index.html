@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level UP Counter | HZRP</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label>Required Cash: </label><br>
+            <input id="reqcash" type="text" name="reqcash" placeholder="Required Cash"><br>
+            <label>Remaining Points: </label><br>
+            <input id="rempoints" type="text" name="rempoints" placeholder="Remaining Points"><br>
+            <label>Required Points: </label><br>
+            <input id="reqpoints" type="text" name="reqpoints" placeholder="Required Points"><br><br>
+            <input type="button" value="Calculate" onclick="calculate()" />
+        </div><br>
+        <div class="results" id="availableLevelsHtml"></div>
+        <div class="results" id="requiredCashHtml"></div> <br>
+        <div class="results" id="requiredPointsHtml"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
