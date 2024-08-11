@@ -27,13 +27,13 @@ function calculate() {
     }
 
     let requiredPointsHtml = document.getElementById('requiredPointsHtml');
-    requiredPointsHtml.innerHTML += `Respect Points: ${remainingPoints}/${requiredPoints} [$${requiredCash.toLocaleString('en')}]`;
+    requiredPointsHtml.innerHTML = `Respect Points: ${remainingPoints}/${requiredPoints} [$${requiredCash.toLocaleString('en')}]`;
 
     let availableLevelsHtml = document.getElementById('availableLevelsHtml'); 
-    availableLevelsHtml.innerHTML += `${levels} level-up${levels > 1 ? "s" : ""} available`;
+    availableLevelsHtml.innerHTML = `${levels} level-up${levels > 1 ? "s" : ""} available`;
 
     let requiredCashHtml = document.getElementById('requiredCashHtml');
-    requiredCashHtml.innerHTML += `Total cash required for ${levels} levels: $${cashSum.toLocaleString('en')}`;
+    requiredCashHtml.innerHTML = `Total cash required for ${levels} levels: $${cashSum.toLocaleString('en')}`;
     
 }; 
 
@@ -57,13 +57,13 @@ function altCalculate() {
     let newCashReq = getNewCashRequired(levels, requiredCash);
 
     let requiredPointsHtml = document.getElementById('requiredPointsHtml');
-    requiredPointsHtml.innerHTML += `Respect Points: ${remainderPts}/${newReqPts} [$${newCashReq.toLocaleString('en')}]`;
+    requiredPointsHtml.innerHTML = `Respect Points: ${remainderPts}/${newReqPts} [$${newCashReq.toLocaleString('en')}]`;
 
     let availableLevelsHtml = document.getElementById('availableLevelsHtml'); 
-    availableLevelsHtml.innerHTML += `${levels} level-up${levels > 1 ? "s" : ""} available`;
+    availableLevelsHtml.innerHTML = `${levels} level-up${levels > 1 ? "s" : ""} available`;
 
     let requiredCashHtml = document.getElementById('requiredCashHtml');
-    requiredCashHtml.innerHTML += `Total cash required for ${levels} levels: $${cashReqSum.toLocaleString('en')}`;
+    requiredCashHtml.innerHTML = `Total cash required for ${levels} levels: $${cashReqSum.toLocaleString('en')}`;
 
 };
 

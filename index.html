@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level UP Counter | HZRP</title>
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <div class="container">
         <div>
-            <label>Required Cash: </label><br>
-            <input id="reqcash" type="text" name="reqcash" placeholder="Required Cash"><br>
-            <label>Remaining Points: </label><br>
-            <input id="rempoints" type="text" name="rempoints" placeholder="Remaining Points"><br>
-            <label>Required Points: </label><br>
-            <input id="reqpoints" type="text" name="reqpoints" placeholder="Required Points"><br><br>
-            <input type="button" value="Calculate" onclick="calculate()" />
-        </div><br>
-        <div class="results" id="availableLevelsHtml"></div>
-        <div class="results" id="requiredCashHtml"></div> <br>
-        <div class="results" id="requiredPointsHtml"></div>
+
+            <input type="text" id="rempoints" name="rempoints" class="input" placeholder="Remaining Points">
+            
+            <span>/</span>
+            
+            <input type="text" id="reqpoints" name="reqpoints" class="input" placeholder="Required Points">
+            
+            <span>[</span>
+
+            <input type="text" id="reqcash" name="reqcash" class="input" placeholder="Required Cash">
+            
+            <span>]</span>          
+            
+        </div>
+
+        <br><br>
+        
+        <button onclick="calculate()">Calculate</button>
+
+        <br><br>
+        
+        <div class="results" id="availableLevelsHtml">&nbsp;</div>
+        <div class="results" id="requiredCashHtml">&nbsp;</div> <br>
+        <div class="results" id="requiredPointsHtml">&nbsp;</div>
     </div>
     <script src="./index.js"></script>
 </body>
+
 </html>
