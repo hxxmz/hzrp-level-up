@@ -14,7 +14,7 @@ function calculate() {
     let levels = 0; let cashSum = 0;
     let levelsCountList = []; let respectPointList = []; let remainingPointsList = [];
 
-    while (remainingPoints > requiredPoints) {
+    while (remainingPoints >= requiredPoints) {
         
         levels += 1; levelsCountList.push(levels);
         
